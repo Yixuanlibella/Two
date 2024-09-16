@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+    color: #f4f4f4;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    /* Add animation to the h1 */
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .interactive {
+    color: red;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  img {
+    width: 50%; 
+    height: 50%; 
+    object-fit: contain; 
+    margin-top: 20px;
+  }
+  
+  /* Keyframes for the text movement */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0); /* Original position */
+    }
+    50% {
+      transform: translateY(-10px); /* Slide up slightly */
+    }
+  }
+  
